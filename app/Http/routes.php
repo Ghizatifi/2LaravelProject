@@ -18,3 +18,10 @@ Route::get('/', function () {
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+Route::get('add', 'manage@AddArticle');
+Route::post('add', 'manage@AddArticle');
+Route::get('view', 'manage@view');
+Route::get('/read/{id}', 'manage@read');
+Route::post('/read/{id}', 'manage@read');
+
+
